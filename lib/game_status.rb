@@ -52,7 +52,7 @@ WIN_COMBINATIONS = [
    end
    
    def winner(board)
-    if won?(board) == board
+    if won?(board) == board[["X"]]
       return "X"
       elsif
       won?(board) == "O"
