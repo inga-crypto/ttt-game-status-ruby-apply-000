@@ -53,7 +53,10 @@ WIN_COMBINATIONS = [
    end
    
    def winner(board)
-    won?(board).include?("X")
-    return "X"
+     winning_board = won?(board)
+    
+    if winning_board
+      return board[winning_board[0]] 
+    end
  
     end
