@@ -34,6 +34,7 @@ WIN_COMBINATIONS = [
         win_index_8 = win_combination[7]
         
           position_1 = board[win_index_1]
+          position_2 = board[win_index_2]
       end
    
    def full?(board)
