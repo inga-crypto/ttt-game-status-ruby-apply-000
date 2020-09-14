@@ -52,12 +52,7 @@ WIN_COMBINATIONS = [
    end
    
    def winner(board)
-    if won?(board) == 
-      return "X"
-      elsif
-      won?(board) == "O"
-      return "O"
-    else
-      return false
-    end
+    won?(board).include?("X")
+    return "X"
+   
    end
