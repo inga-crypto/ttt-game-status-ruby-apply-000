@@ -26,8 +26,8 @@ WIN_COMBINATIONS = [
       
    
    def full?(board)
-     board.include?(" ") || board.include?("")
-     false
+     !board.include?(" ") && !board.include?("")
+     
     end
    
    def draw?(board)
