@@ -22,6 +22,11 @@ WIN_COMBINATIONS = [
         board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]] && position_taken?(board, combo[0])
         end
       end
+      
+      def won?(board)
+        win_index_1 = WIN_COMBINATIONS[0]
+        
+      end
    
    def full?(board)
      if board.include?(" ")
