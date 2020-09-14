@@ -36,13 +36,8 @@ WIN_COMBINATIONS = [
    end
    
    def draw?(board)
-     if board.include?(" ") || board.include?("")
-       return false
-     elsif won?(board)
-       return false
-     else
-       return true
-    end
+   full?(board) && !won?(board)
+     
    end
    
    def over?(board)
